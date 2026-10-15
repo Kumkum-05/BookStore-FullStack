@@ -1,0 +1,39 @@
+#----------------------------------------------------------------------------------------------------------------
+
+#--------------------------
+# Datasource Configuration
+#--------------------------
+
+spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
+spring.datasource.url=jdbc:mysql://localhost:3306/BookStore_DB
+spring.datasource.username=root
+spring.datasource.password=root
+spring.sql.init.mode=always
+
+#----------------------------------------------------------------------------------------------------------------
+
+#--------------------------
+# Hibernate Configuration
+#--------------------------
+
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQLDialect
+spring.jpa.properties.hibernate.show_sql=true
+
+#----------------------------------------------------------------------------------------------------------------
+
+#-----------------------------------------------------------
+# JWT secret used for generating JWT tokens, base64 encoded
+#-----------------------------------------------------------
+
+jwt_secret=
+
+#----------------------------------------------------------------------------------------------------------------
+
+#-------------------
+# Stripe secret key
+#-------------------
+
+stripe.key.secret=
+
+#----------------------------------------------------------------------------------------------------------------
